@@ -11,7 +11,7 @@ public class CalculationTest {
 	
 	@Test
 	public void executeScript() throws Exception {
-		// The code in this method is generated from: /de.devboost.natspec.library.tables.test/src-test/de/devboost/natspec/library/tables/test/CalculationTest.natspec
+		// The code in this method is generated from: /de.devboost.natspec.library.tables.example/src-test/de/devboost/natspec/library/tables/test/CalculationTest.natspec
 		// Never change this method or any contents of this file, all local changes will be overwritten.
 		
 		// |- Factor A (Input) -|- Factor B (Input) -|- Result (Output) -|
