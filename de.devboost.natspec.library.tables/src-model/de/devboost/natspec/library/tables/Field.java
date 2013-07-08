@@ -28,4 +28,8 @@ public class Field {
 	public String toString() {
 		return getClass().getSimpleName() + " [" + getText() + "]";
 	}
+
+	public Integer getInteger() {
+		return Integer.valueOf(text);
+	}
 }
