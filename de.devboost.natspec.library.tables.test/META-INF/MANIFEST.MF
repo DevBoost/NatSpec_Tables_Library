@@ -4,7 +4,7 @@ Bundle-Name: NatSpec Table Library Test Plug-Ins
 Bundle-SymbolicName: de.devboost.natspec.library.tables.test
 Bundle-Version: 1.0.0.qualifier
 Bundle-Vendor: DevBoost GmbH
-Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Require-Bundle: de.devboost.natspec.library.tables,
  org.junit,
  de.devboost.natspec.annotations
