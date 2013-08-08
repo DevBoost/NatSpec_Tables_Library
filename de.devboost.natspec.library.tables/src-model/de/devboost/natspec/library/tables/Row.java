@@ -26,7 +26,7 @@ public class Row {
 				return getField(columnIndex);
 			}
 		}
-		throw new IllegalArgumentException("Unkwown column name: " + columnName);
+		throw new IllegalArgumentException("Unknown column name: " + columnName);
 	}
 
 	private Field getField(int columnIndex) {
