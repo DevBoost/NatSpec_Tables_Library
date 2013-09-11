@@ -9,8 +9,12 @@ import de.devboost.natspec.library.tables.Table;
 import de.devboost.natspec.library.tables.support.internal.StringHelper;
 
 /**
- * The {@link TableSyntaxSupport} can be references from NatSpec template
- * classes to enabled syntax patterns that create tables.
+ * The {@link TableSyntaxSupport} can be referenced from NatSpec template
+ * classes to enabled syntax patterns that create tables. The patterns defined
+ * by the methods in this class create a model of the table using the classes
+ * {@link Table}, {@link Row} and {@link Field}. This model can be accessed by
+ * defining a custom test support method with an implicit parameter of type
+ * {@link Table}. By doing so, the table that was created last can be accessed.
  */
 public class TableSyntaxSupport {
 
