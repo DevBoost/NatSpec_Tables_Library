@@ -29,7 +29,7 @@ public class Row {
 		throw new IllegalArgumentException("Unknown column name: " + columnName);
 	}
 
-	private Field getField(int columnIndex) {
+	public Field getField(int columnIndex) {
 		return fields.get(columnIndex);
 	}
 
