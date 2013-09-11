@@ -8,22 +8,34 @@ import de.devboost.natspec.library.tables.Row;
 import de.devboost.natspec.library.tables.Table;
 import de.devboost.natspec.library.tables.support.internal.StringHelper;
 
+/**
+ * The {@link TableSyntaxSupport} can be references from NatSpec template
+ * classes to enabled syntax patterns that create tables.
+ */
 public class TableSyntaxSupport {
 
 	private Table lastTable;
 
+	/**
+	 * Creates a new table header. Use <code>|- Header 1 -|- Header 2 -|</code>
+	 * to define the table's column headers.
+	 */
 	@TextSyntax("|- #1 -|")
 	public Table createTable(List<String> header) {
 		if (lastTable != null) {
 			lastTable.seal();
 		}
-		Table table1 = new Table();
-		List<Field> headerFields = table1.getHeaders();
-		addFields(header, headerFields,"-\\|-");
-		lastTable = table1;
-		return table1;
+		Table newTable = new Table();
+		List<Field> headerFields = newTable.getHeaders();
+		addFields(header, headerFields, "-\\|-");
+		lastTable = newTable;
+		return newTable;
 	}
 
+	/**
+	 * Creates a new table row. Use <code>| Value 1 | Value 2 |</code>
+	 * to define the table's row values.
+	 */
 	@TextSyntax("| #1 |")
 	public void createRow(List<String> text, Table table) {
 		Row row = new Row(table);
