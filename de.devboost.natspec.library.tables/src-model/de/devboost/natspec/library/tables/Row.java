@@ -28,6 +28,11 @@ public class Row {
 		}
 		throw new IllegalArgumentException("Unknown column name: " + columnName);
 	}
+	
+	public String getColumnName(int columnIndex) {
+		List<Field> headers = table.getHeaders();
+		return headers.get(columnIndex).getText();
+	}
 
 	public Field getField(int columnIndex) {
 		return fields.get(columnIndex);
