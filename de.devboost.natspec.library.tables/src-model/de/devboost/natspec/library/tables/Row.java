@@ -10,6 +10,7 @@ public class Row {
 	private Table table;
 
 	public Row(Table parent) {
+		super();
 		this.table = parent;
 	}
 	
@@ -17,6 +18,10 @@ public class Row {
 		return fields;
 	}
 	
+	public Table getTable() {
+		return table;
+	}
+
 	public Field getField(String columnName) {
 		List<Field> headers = table.getHeaders();
 		for (Field headerField : headers) {
