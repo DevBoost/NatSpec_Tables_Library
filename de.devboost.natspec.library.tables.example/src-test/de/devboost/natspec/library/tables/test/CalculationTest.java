@@ -13,6 +13,7 @@ public class CalculationTest {
 	public void executeScript() throws Exception {
 		// The code in this method is generated from: /de.devboost.natspec.library.tables.example/src-test/de/devboost/natspec/library/tables/test/CalculationTest.natspec
 		// Never change this method or any contents of this file, all local changes will be overwritten.
+		// Change _NatSpecTemplate.java instead.
 		
 		// |- Factor A (Input) -|- Factor B (Input) -|- Result (Output) -|
 		de.devboost.natspec.library.tables.Table table_Factor_A__Input______Factor_B__Input______Result__Output_ = tableSyntaxSupport.createTable(java.util.Arrays.asList(new java.lang.String[] {"Factor", "A", "(Input)", "-|-", "Factor", "B", "(Input)", "-|-", "Result", "(Output)"}));
